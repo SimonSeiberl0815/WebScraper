@@ -1,18 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f216597d-3570-4788-9e8e-6c4b10e39824" name="Changes" comment="" />
+    <list default="true" id="f216597d-3570-4788-9e8e-6c4b10e39824" name="Changes" comment="changes python">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebScraper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WebScraper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/Backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/compress_decompress.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/compress_decompress.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/genAi.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/genAi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/scraperKurs.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/scraperKurs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/scraperLva.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/scraperLva.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/scraperMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/scraperMain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/scraperModul.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/scraperModul.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/scraperStudiengang.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/scraperStudiengang.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SimonSeiberl0815"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SimonSeiberl0815/WebScraper.git",
+    "accountId": "31f5e62d-55aa-499b-b8ca-ab83c3ab46bb"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2s1qF32tGOYR4OgRCI2eGUJFVGZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -21,11 +62,24 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ScraperBackendApplication.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Kutsc/Desktop/WebScraper/java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kutsc\Desktop\WebScraper\java" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,5 +90,12 @@
       <updated>1737633323756</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changes python" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes python" />
   </component>
 </project>
