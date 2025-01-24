@@ -6,25 +6,25 @@ import jakarta.persistence.Id;
 @Entity
 public class Studiengang {
     @Id
-    private Long skz;
+    private String skz;
     private String name;
     private String level;
     private String url;
 
     public Studiengang(){}
 
-    public Studiengang(Long skz, String name, String level, String url) {
+    public Studiengang(String skz, String name, String level, String url) {
         this.skz = skz;
         this.name = name;
         this.level = level;
         this.url = url;
     }
 
-    public Long getSkz() {
+    public String getSkz() {
         return skz;
     }
 
-    public void setSkz(Long skz) {
+    public void setSkz(String skz) {
         this.skz = skz;
     }
 

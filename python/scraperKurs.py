@@ -113,6 +113,7 @@ def get_kurs(id):
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
+        print(f"getKurs: {response.status_code}")
         return Kurs.from_dict(data)
     else:
         print(f"Failed to fetch Modul with ID {id}: {response.status_code}")
@@ -123,6 +124,7 @@ def get_all_kurse():
     response = requests.get(url)
     if response.status_code == 200:
         kurse = response.json()
+        print(f"getAllKurse: {response.status_code}")
         return [Kurs.from_dict(kur) for kur in kurse]
     else:
         print(f"Error: {response.status_code}")
@@ -134,7 +136,7 @@ def get_all_kurse_studiengang(studiengang):
 
     if response.status_code == 200:
         kurse = response.json()
-        print(response.status_code)
+        print(f"getAllKurse{studiengang}: {response.status_code}")
         return [Kurs.from_dict(kurs) for kurs in kurse]
     else:
         print(f"Error: {response.status_code}")

@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f216597d-3570-4788-9e8e-6c4b10e39824" name="Changes" comment="changes python">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebScraper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WebScraper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/Backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/compress_decompress.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/compress_decompress.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/genAi.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/genAi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/Backend/src/main/java/com/example/demo/Studiengang.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/Backend/src/main/java/com/example/demo/Studiengang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/Backend/src/main/java/com/example/demo/StudiengangController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/Backend/src/main/java/com/example/demo/StudiengangController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/Backend/src/main/java/com/example/demo/StudiengangRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/Backend/src/main/java/com/example/demo/StudiengangRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/scraperKurs.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/scraperKurs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/scraperLva.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/scraperLva.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/scraperMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/scraperMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/scraperModul.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/scraperModul.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/scraperStudiengang.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/scraperStudiengang.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/scraperTermin.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/scraperTermin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +58,9 @@
   "keyToString": {
     "Application.ScraperBackendApplication.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Python.scraperLva.executor": "Run",
+    "Python.scraperMain.executor": "Run",
+    "Python.scraperTermin.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -89,6 +86,15 @@
       <option name="presentableId" value="Default" />
       <updated>1737633323756</updated>
     </task>
+    <task id="LOCAL-00001" summary="changes python">
+      <option name="closed" value="true" />
+      <created>1737647513216</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737647513216</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">

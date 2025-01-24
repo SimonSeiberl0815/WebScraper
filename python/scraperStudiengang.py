@@ -76,8 +76,8 @@ def get_all_studiengaenge():
     response = requests.get(url)
 
     if response.status_code == 200:
-        studiengaenge = response.json()  # Convert JSON response to a Python list of dictionaries
-        return [Studiengang.from_dict(stg) for stg in studiengaenge]  # Convert each dictionary to a Modul object
+        studiengaenge = response.json()
+        return [Studiengang.from_dict(stg) for stg in studiengaenge]
     else:
         print(f"Error: {response.status_code}")
         return None

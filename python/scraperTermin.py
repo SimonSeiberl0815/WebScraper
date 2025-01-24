@@ -97,8 +97,8 @@ def scrap_termin(kurs : Sck.Kurs):
         dauer = ((end_datetime - start_datetime).total_seconds()) /60
         kursnummer = kurs.kursnummer
         leiter = kurs.leiter
-        terminKey = kursnummer+'/'+datumDate+'/'+startDate+'/'+leiter
         studiengang = kurs.studiengang
+        terminKey = kursnummer+'/'+datumDate+'/'+startDate+'/'+ studiengang
         termin = Termin(terminKey=terminKey,kursnummer=kursnummer,tag=tag,datum=datumDate,start=startDate,ende=endeDate,dauer=dauer,raum=raum,leiter=leiter,studiengang=studiengang)
         post_termin(termin)
 
@@ -113,6 +113,7 @@ def get_all_termine():
     response = requests.get(url)
     if response.status_code == 200:
         termine = response.json()
+        print(f"getAllTermin: {response.status_code}")
         return [Termin.from_dict(term) for term in termine]
     else:
         print(f"Error: {response.status_code}")
@@ -124,7 +125,7 @@ def get_all_termine_studiengang(studiengang):
 
     if response.status_code == 200:
         termine = response.json()
-        print(response.status_code)
+        print(f"getAllTermine{studiengang}: {response.status_code}")
         return [Termin.from_dict(termin) for termin in termine]
     else:
         print(f"Error: {response.status_code}")

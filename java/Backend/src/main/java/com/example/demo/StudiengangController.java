@@ -29,7 +29,7 @@ public class StudiengangController {
 
     // Get a specific Studiengang by SKZ
     @GetMapping("/{skz}")
-    public ResponseEntity<Studiengang> getStudiengangBySkz(@PathVariable Long skz) {
+    public ResponseEntity<Studiengang> getStudiengangBySkz(@PathVariable String skz) {
         Optional<Studiengang> studiengang = studiengangRepository.findById(skz);
         return studiengang.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
@@ -37,7 +37,7 @@ public class StudiengangController {
 
     // Update a Studiengang by SKZ
     @PutMapping("/{skz}")
-    public ResponseEntity<Studiengang> updateStudiengang(@PathVariable Long skz, @RequestBody Studiengang updatedStudiengang) {
+    public ResponseEntity<Studiengang> updateStudiengang(@PathVariable String skz, @RequestBody Studiengang updatedStudiengang) {
         if (!studiengangRepository.existsById(skz)) {
             return ResponseEntity.notFound().build();
         }
@@ -49,7 +49,7 @@ public class StudiengangController {
 
     // Delete a Studiengang by SKZ
     @DeleteMapping("/{skz}")
-    public ResponseEntity<Void> deleteStudiengang(@PathVariable Long skz) {
+    public ResponseEntity<Void> deleteStudiengang(@PathVariable String skz) {
         if (!studiengangRepository.existsById(skz)) {
             return ResponseEntity.notFound().build();
         }

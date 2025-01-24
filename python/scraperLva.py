@@ -176,6 +176,7 @@ def get_lva(id):
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
+        print(f"getLva: {response.status_code}")
         return Lva.from_dict(data)
     else:
         print(f"Failed to fetch Modul with ID {id}: {response.status_code}")
@@ -187,6 +188,7 @@ def get_all_lvas():
 
     if response.status_code == 200:
         lvas = response.json()
+        print(f"getAllLvas: {response.status_code}")
         return [Lva.from_dict(lv) for lv in lvas]
     else:
         print(f"Error: {response.status_code}")
@@ -197,8 +199,7 @@ def get_all_lvas_studiengang(studiengang):
 
     if response.status_code == 200:
         lvas = response.json()
-        print(lvas)
-        print(response.status_code)
+        print(f"getAllLvas{studiengang}: {response.status_code}")
         return [Lva.from_dict(lv) for lv in lvas]
     else:
         print(f"Error: {response.status_code}")
@@ -242,9 +243,6 @@ def summarize_lva(id):
     lva.sprache= Cd.compress_string(lva.sprache)
     lva.beurteilung = Cd.compress_string(lva.beurteilung)
     post_lva(lva)
-    global count
-    count +=1
-    print(count)
 
 #splits lva heading in lvanummer, typ und name
 def split_lva(input_string):
@@ -308,6 +306,12 @@ def scrap_skz(url):
     soup = BeautifulSoup(html_text,'lxml')
     heading = soup.find('h3').text
     match = re.search(r"\(UK (\d+)/(\d+)\)", heading)
+
+    if match:
+        numbers = match.group(1) + match.group(2)
+        return numbers
+    else:
+        return None
 
 #navigates along the bread-crumb-trail to match Lvas with a Moduls
 def get_modulnr(url):
